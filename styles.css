@@ -1,0 +1,660 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    
+}
+.body {
+    display: flex;
+}
+
+/* ============== navigation bar ============== */
+
+.nav {
+    overflow: hidden;
+    background-color: #00587d;
+    top: 0;
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+
+}
+.nav a {
+    margin-top: 7px;
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding:20px 25px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+
+.logo{
+    align-self: left;
+    height: 23px;
+
+}
+.nav a:hover {
+  border-radius: 15px;
+    background-color: #ddd;
+    color: black;
+
+
+}
+.nav a.active {
+  border-radius: 15px;
+    background-color: #487d9c;
+    color: white;
+}
+.nav .icon {
+    display: none;
+}
+@media screen and (max-width: 700px) {
+  .nav a:not(:first-child) {display: none;}
+  .nav a.icon {
+      float: right;
+      display: block;
+  }
+  .nav.responsive {position: relative;}
+  .nav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+  }
+  .nav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+      
+  }
+}
+
+/* ============== navigation bar ============== */
+
+/* ============== home ============== */
+
+.detel{
+    align-items: center;
+    color: #4b4b4b;
+    flex-direction: row;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.hirebutton {
+    background: #00587d;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+
+}
+.hirebutton {
+    border-radius: 15px;
+    background-color: #00587d;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+
+  }
+  
+.hirebutton span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+.hirebutton span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+.hirebutton:hover span {
+    padding-right: 25px;
+  }
+  
+.hirebutton:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+.top {
+    background-image: linear-gradient(#9ecadf, rgb(255, 255, 255));
+    display: flex;
+    padding-left: 10%;
+    padding-right: 10%;
+
+
+}
+.myimage {
+    size: 80%;
+    padding: 10%;
+    align-items: center;
+}
+.myimage img{
+    width: 100%;
+}
+.detel {
+    width: 50%;
+    font-size: 30px;
+    font-weight: bold;
+    vertical-align: middle;
+}
+.detel p span{
+    color: #00587d;
+}
+.animate .h1 { font-size: 20px; 
+}
+.animate .h2 {
+    color: rgb(37, 26, 26);
+    font-size: 2em;
+}
+.animate span {
+    color: #00587d;
+}
+.myself {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: normal;
+    font-size: 20px;
+    
+}
+.rework {
+    padding-top: 10%;
+    background-image: url("images/hedderback.jpg");
+    background-size: 100%;
+}
+.rk {
+    text-align: center;
+    color: #ffffff;
+    font-size: 40px;
+    padding-bottom: 2%;
+}
+
+.mySlides {display: none;}
+
+
+.slideshow-container {
+    padding-left: 10%;
+    padding-right: 7%;
+}
+.mySlides img {
+    padding: 5px;
+}
+.yyy {
+    padding-bottom: 10%;
+
+}
+.myslides {
+    align-self: center;
+}
+
+.dot {
+  display: 0;
+
+}
+
+.active {
+  background-color: #717171;
+}
+
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+
+}      
+.myskills {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 20%;
+    padding-right: 20%;
+    background-image: url("images/skillbac.jpg");
+    background-size:100%;
+
+
+
+}
+.myskills p {
+    padding: 5px;
+    font-weight: bold;
+}
+.sk {
+    text-align: center;
+    color: #00587d;
+    font-size: 40px;
+}
+
+.scontainer {
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgb(146, 146, 146);
+    
+}
+  
+.skills {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
+  
+.photoshop {width: 90%; background-color: #00587d; border-radius: 10px;}
+.premierpro {width: 80%; background-color: #00587d; border-radius: 10px;}
+.aftereffects {width: 80%; background-color: #00587d; border-radius: 10px;}
+.html {width: 70%; background-color: #00587d; border-radius: 10px;}
+.css {width: 65%; background-color: #00587d; border-radius: 10px;}
+.js {width: 60%; background-color: #00587d; border-radius: 10px;}
+
+@media screen and (max-width: 700px) {
+  .top {
+      padding-top: 6%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-left: 0;
+      padding-right: 0;
+  }
+  .detel {
+      text-align: center;
+      size: 100%;
+      padding: 0;
+  
+  }
+}
+
+/* ============== home ============== */
+
+/* ============== myservices ============== */
+
+  .service{
+    width: 100%;
+  }
+  .myservices{
+    padding-top: 100px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    background-image: url("images/skillbacsdfgsd.jpg");
+    background-size: 100%;
+  }
+  .title h2{
+    color: #00587d;
+    font-size: 50px;
+    margin: 30px auto;
+    text-align: center;
+  }
+  .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+  }
+  .card{
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    background: #b7e5ff;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .card:hover{
+    transform: scale(1.05);
+  }
+  .card i{
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color: #00587d;
+  
+  }
+  h5{
+    color: #00587d;
+    font-size: 23px;
+    margin-bottom: 15px;
+  }
+  .pra p{
+    color: rgba(32, 32, 32, 0.8);
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+  }
+  .card .button{
+    background-color:#00587d;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+    transition: .4s; 
+  }
+  .card .button:hover{
+    background-color: transparent;
+    border: 2px solid #00587d;
+    color: #00587d;
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 700px) {
+
+    .box{
+      flex-direction: column;
+    }
+
+  }
+
+/* ============== myservices ============== */
+
+/* ============== hire me ============== */
+
+  .hireme {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    background-image: url("images/skillbacsdfgsd.jpg");
+    background-size: 100%;
+  }
+
+  .hireform {
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 50px;
+    border-radius: 20px;
+    background-color: #b7e5ff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type=submit] {
+    margin-top: 10px;
+    background-color: #00587d;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    float: right;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #487d9c;
+  }
+  
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  @media screen and (max-width: 700px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+/* ============== hire me ============== */
+
+/* ============== About ============== */
+
+.about{
+	width: 100%;
+	padding: 100px 0px;
+  background-image: url("images/skillbacsdfgsd.jpg");
+  background-size: 100%;
+}
+
+.conabout{
+  margin-left: 15%;
+  margin-right: 15%;
+  padding: 20px;
+}
+.about img{
+	height: auto;
+	width: 400px;
+  border-radius: 40px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.about-text{
+  text-align: justify;
+	width: 550px;
+}
+.main{
+	max-width: 95%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+
+}
+.about-text p{
+  background-color: #00587d;
+	color: #ffffff;
+  padding: 15px;
+  border-radius: 15px;
+	letter-spacing: 1px;
+	line-height: 28px;
+	font-size: 18px;
+  margin-top: 45px;
+	margin-bottom: 45px;
+}
+@media screen and (max-width: 700px) {
+
+  .main{
+    flex-direction: column;
+  }
+  .about-text{
+    width: 500px;
+  }
+
+}
+
+/* ============== About ============== */
+
+/* ============== contact me ============== */
+
+.contact {
+      width: 100%;
+      padding: 100px 0px;
+      background-image: url("images/skillbacsdfgsd.jpg");
+      background-size: 100%;
+  }
+  
+.contents {
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #00587d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+.contents h2{
+    font-weight: normal;
+    color: #ffff;
+    text-align: center;
+  }
+.contents .sociallist {
+      padding-top: 25px;
+      text-align: center;
+      padding-bottom: 25px;
+      color:#ffffff;
+  }
+.contents .sociallist a {
+      font-size: 24px;
+      color: inherit;
+      border: 1px solid #ffffff;
+      width: 40px;
+      height: 40px;
+      line-height: 38px;
+      display: inline-block;
+      text-align: center;
+      border-radius: 50%;
+      margin: 0 3px;
+      opacity: 0.6;
+      
+  }
+.contents .sociallist a:hover {
+      opacity: 0.9;
+  }
+.contents .info {
+    display: grid;
+    grid-gap: 15px;
+    color: #000000;
+    grid-template-columns: 1fr;
+  }
+  
+.contents .info .car {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    color: #ffffff;
+    border-radius: 5px;
+    align-items: center;
+    margin-bottom: 15px;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid #ffffff;
+    transition: all 0.4s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  
+.contents .info .car:hover {
+    color: #000000;
+    background-color: #ffffff;
+  }
+  
+.contents .info .car h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+iframe {
+    width: 100%;
+    height: 450px;
+    border-radius: 10px;
+  }
+  
+  @media (min-width: 700px) {
+
+    .contents .info {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+/* ============== contact me ============== */
+
+/* ============== footer ============== */
+
+footer {
+    padding: 30PX;
+    background-color: #00587d;
+    bottom: 0;
+    z-index: 3;
+    margin-bottom: 0%;
+    position: static;
+}
+footer .sociallist {
+    text-align: center;
+    padding-bottom: 25px;
+    color:#ffffff;
+}
+footer .sociallist a {
+    font-size: 24px;
+    color: inherit;
+    border: 1px solid #ffffff;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 3px;
+    opacity: 0.6;
+    
+}
+footer .sociallist a:hover {
+    opacity: 0.9;
+}
+footer ul {
+  
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+footer ul li a {
+    color: #ffff;
+    text-decoration: none;
+    opacity: 0.6;
+}
+footer ul li {
+    display: inline-block;
+    padding: 0 10px;
+}
+footer ul li a:hover {
+    opacity: 1;
+}
+footer .copyright {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 13px;
+    color: #ffff;
+    opacity: 0.6;
+}
+
+/* ============== footer ============== */
