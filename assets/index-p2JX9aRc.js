@@ -4924,8 +4924,8 @@ vec3 texelOld = texture2D(previousShadowMap, vUv).rgb;
   animation: animate 3s infinite ease alternate;
 
   @media screen and (max-width: 768px) {
-    width: 400px;
-    height: 500px;
+    width: 70%;
+    height: 60%px;
   }
 
   @keyframes animate {
