@@ -4843,7 +4843,6 @@ vec3 texelOld = texture2D(previousShadowMap, vUv).rgb;
   display: flex;
   align-items: center;
   gap: 10px;
-  justify-content: center;
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
