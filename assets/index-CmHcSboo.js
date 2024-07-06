@@ -4800,7 +4800,7 @@ vec3 texelOld = texture2D(previousShadowMap, vUv).rgb;
   justify-content: space-between;
 
   @media screen and (max-width: 768px) {
-    height: auto;
+    height: 100%;
   }
 `,$Q=At.div`
   height: 100%;
@@ -4912,8 +4912,8 @@ vec3 texelOld = texture2D(previousShadowMap, vUv).rgb;
     width: 100%;
   }
 `,uq=At.img`
-  width: 800px;
-  height: 650px;
+  width: 600px;
+  height: 600px;
   object-fit: contain;
   position: absolute;
   top: 0;
@@ -4923,9 +4923,10 @@ vec3 texelOld = texture2D(previousShadowMap, vUv).rgb;
   margin: auto;
   animation: animate 3s infinite ease alternate;
 
-  @media screen and (max-width: 768px) {
-    width: 70%;
-    height: 350px;
+
+  @media only screen and (max-width: 768px) {
+    width: 350px;
+    height: 400px;
   }
 
   @keyframes animate {
