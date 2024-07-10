@@ -4723,10 +4723,6 @@ vec3 texelOld = texture2D(previousShadowMap, vUv).rgb;
   display: flex;
   align-items: center;
   justify-content: center;
-
-  @media screen and (max-width: 768px) {
-    height: 100%;
-  }
 `,WQ=wt.div`
   height: 100%;
   scroll-snap-align: center;
@@ -4739,7 +4735,6 @@ vec3 texelOld = texture2D(previousShadowMap, vUv).rgb;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 20px;
   }
 `,XQ=wt.div`
   flex: 2;
