@@ -5342,7 +5342,10 @@ width: 300px;
   background: linear-gradient(to bottom, #12003f, rgba(0, 0, 0, 0));
   backdrop-filter: blur(4px);
 
-  
+  @media screen and (max-width: 768px) {
+    width:95%;
+
+  }
 `,roe=wt.div`
   width: 75vw;
   display: flex;
