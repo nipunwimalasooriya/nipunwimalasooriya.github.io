@@ -5225,7 +5225,7 @@ width: 300px;
 
 
 }
-`,Gse=()=>{const t=$.useRef(),[e,n]=$.useState(null);return Ge(Dse,{children:Mn(Lse,{children:[Ge(Use,{children:Mn(Nse,{ref:t,onSubmit:i=>{i.preventDefault(),Ise.sendForm("service_f5j54um","template_fl3akfl",t.current,"oIFpnFM1MOhbGuWNk").then(s=>{console.log(s.text),n(!0)},s=>{console.log(s.text),n(!1)})},children:[Ge(Fse,{children:"Contact Me"}),Ge(nD,{placeholder:"Name",name:"name"}),Ge(nD,{placeholder:"Email",name:"email"}),Ge(Ose,{placeholder:"Write Your Message",name:"message",rows:10}),Ge(kse,{type:"submit",children:"Send"}),e!==null&&(e?"Your message has been sent, We'll get back to you soon :)":"There was an error sending your message. Please try again.")]})}),Ge(zse,{children:Ge(_se,{})})]})})},Hse=({image:t,title:e,description:n,link:r,technologies:i})=>Mn(Vse,{children:[Ge(Wse,{src:t,alt:e}),Mn(Xse,{children:[Ge(jse,{children:e}),Ge(Yse,{children:i.map((s,o)=>Ge(Kse,{children:s},o))}),Ge(Jse,{children:n}),Ge(Zse,{href:r,target:"_blank",rel:"noopener noreferrer",children:"View Project"})]})]}),Vse=wt.div`
+`,Gse=()=>{const t=$.useRef(),[e,n]=$.useState(null);return Ge(Dse,{children:Mn(Lse,{children:[Ge(Use,{children:Mn(Nse,{ref:t,onSubmit:i=>{i.preventDefault(),Ise.sendForm("service_f5j54um","template_fl3akfl",t.current,"oIFpnFM1MOhbGuWNk").then(s=>{console.log(s.text),n(!0)},s=>{console.log(s.text),n(!1)})},children:[Ge(Fse,{children:"Contact Me"}),Ge(nD,{placeholder:"Name",name:"name"}),Ge(nD,{placeholder:"Email",name:"email"}),Ge(Ose,{placeholder:"Write Your Message",name:"message",rows:10}),Ge(kse,{type:"submit",children:"Send"}),e!==null&&(e?"Your message has been sent, We'll get back to you soon :)":"There was an error sending your message. Please try again.")]})}),Ge(zse,{children:Ge(_se,{})})]})})},Hse=({image:t,ptitle:e,pdescription:n,link:r,ptechnologies:i})=>Mn(Vse,{children:[Ge(Wse,{src:t,alt:e}),Mn(Xse,{children:[Ge(jse,{children:e}),Ge(Yse,{children:i.map((s,o)=>Ge(Kse,{children:s},o))}),Ge(Jse,{children:n}),Ge(Zse,{href:r,target:"_blank",rel:"noopener noreferrer",children:"View Project"})]})]}),Vse=wt.div`
   width: 400px;
   margin: 10px;
   border-radius: 8px;
@@ -5284,9 +5284,8 @@ width: 300px;
     background-color: #ffffff;
     box-shadow: 0 5px 15px rgba(145, 92, 182, 0.4);
   }
-`,Qse=()=>Ge(qse,{children:Mn($se,{children:[Ge(eoe,{children:"My Projects"}),Ge(toe,{children:[{image:"./img/SinhalaOCR.jpg",title:"Sinhala OCR",technologies:["React","Python","FastAPI","OpenCV","PyTesseract"],description:"Optical Charactor recognition system designed mainly to digitalies printed sinhala text accuratly.",link:"https://github.com/nipunwimalasooriya/capstone_project_sinhalaOCR"},{image:"./img/Meditech.jpg",title:"MediTech",technologies:["React","Node.js","Express","MongoDB","Socket.IO"],description:"This web application is designed to streamline the process of scheduling and managing doctor appointments.",link:"https://github.com/Shehan-lakshitha/MediTech"},{image:"./img/portfolio.jpg",title:"Personal Portfolio",technologies:["React","ThreeJS","EmailJS","Styled-Components"],description:"This is my personal website that I frequently update with new technologies that I learn during my journey.",link:"https://github.com/nipunwimalasooriya/portfolio-update"},{image:"./img/Wavelane.jpg",title:"Wave Lane UI",technologies:["Figma","Photoshop"],description:"UI Developed for a ecommerce clothing store with attreactive design.",link:"https://www.figma.com/design/Kh5ONtRUuN1EZdKPRETjhK/Wave-Lane?node-id=0-1&t=RNQuHLCkQYJuleFq-1"}].map((e,n)=>Ge(Hse,{image:e.image,title:e.title,technologies:e.technologies,description:e.description,link:e.link},n))})]})}),qse=wt.div`
+`,Qse=()=>Ge(qse,{children:Mn($se,{children:[Ge(eoe,{children:"My Projects"}),Ge(toe,{children:[{image:"./img/SinhalaOCR.jpg",ptitle:"Sinhala OCR",ptechnologies:["React","Python","FastAPI","OpenCV","PyTesseract"],pdescription:"Optical Character recognition system designed mainly to digitize printed Sinhala text accurately.",link:"https://github.com/nipunwimalasooriya/capstone_project_sinhalaOCR"},{image:"./img/Meditech.jpg",ptitle:"MediTech",ptechnologies:["React","Node.js","Express","MongoDB","Socket.IO"],pdescription:"This web application is designed to streamline the process of scheduling and managing doctor appointments.",link:"https://github.com/Shehan-lakshitha/MediTech"},{image:"./img/portfolio.jpg",ptitle:"Personal Portfolio",ptechnologies:["React","ThreeJS","EmailJS","Styled-Components"],pdescription:"This is my personal website that I frequently update with new technologies that I learn during my journey.",link:"https://github.com/nipunwimalasooriya/portfolio-update"},{image:"./img/Wavelane.jpg",ptitle:"Wave Lane UI",ptechnologies:["Figma","Photoshop"],pdescription:"UI Developed for an ecommerce clothing store with an attractive design.",link:"https://www.figma.com/design/Kh5ONtRUuN1EZdKPRETjhK/Wave-Lane?node-id=0-1&t=RNQuHLCkQYJuleFq-1"}].map((e,n)=>Ge(Hse,{image:e.image,ptitle:e.ptitle,ptechnologies:e.ptechnologies,pdescription:e.pdescription,link:e.link},n))})]})}),qse=wt.div`
   min-height: 100vh;
-  /* scroll-snap-align: center; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -5404,7 +5403,7 @@ width: 300px;
   scrollbar-width: none;
   color: white;
   font-family: 'Montserrat';
-  background: url("./img/bg.jpeg");
+  background: url("./img/background.jpg");
   padding-top: 80px; 
   &::-webkit-scrollbar {
     display: none;
